@@ -1,0 +1,8 @@
+{
+  "name": "Remix NetScan Root (Python \u0026 ARP)",
+  "description": "Android Root Network Scanner \u0026 Python Scapy execution environment with real-time ARP discovery, MAC vendor lookup, port inspection, and superuser shell terminal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
