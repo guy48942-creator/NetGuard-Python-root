@@ -199,7 +199,7 @@ source.dir = .
 source.include_exts = py,png,jpg,kv,atlas
 
 version = 1.0.0
-requirements = python3,kivy,scapy,libffi,openssl
+requirements = python3,kivy,scapy,paramiko,libffi,openssl
 
 orientation = portrait
 fullscreen = 0
@@ -220,8 +220,10 @@ android.add_src = .
 sudo apt update
 sudo apt install -y git zip unzip openjdk-17-jdk python3-pip autoconf libtool pkg-config zlib1g-dev libncurses5-dev libncursesw5-dev libtinfo5 cmake libffi-dev libssl-dev cython3
 
-# 2. تثبيت Buildozer:
-pip install --upgrade buildozer
+# 2. تثبيت Buildozer والحزم الإضافية (Scapy & Paramiko):
+pip install --upgrade buildozer paramiko
+wget -q https://raw.githubusercontent.com/C3s1um133/Network-Scanner-PORT-ALIVE/master/neighbors_parser.py
+chmod +x neighbors_parser.py
 
 # 3. بناء وتجميع ملف APK:
 # بناء حزمة تصحيح الأخطاء (Debug APK):

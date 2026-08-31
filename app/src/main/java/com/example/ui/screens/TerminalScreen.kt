@@ -37,9 +37,9 @@ fun TerminalScreen(
     val presetCommands = listOf(
         "cat /proc/net/arp" to "جدول ARP",
         "ip neighbor show" to "عناوين IP الجارة",
+        "python3 neighbors_parser.py" to "neighbors_parser.py",
         "ifconfig wlan0" to "واجهة الواي فاي",
         "id" to "فحص UID الروت",
-        "getenforce" to "حالة SELinux",
         "su -c setenforce 0" to "تفعيل Permissive"
     )
 
